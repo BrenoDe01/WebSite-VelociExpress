@@ -1,0 +1,85 @@
+body {
+    background-color: #2980b9;
+    color: white;
+    font-family: 'Roboto', sans-serif; /* Substitua 'Roboto' pela fonte desejada */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title {
+    flex-direction: column;
+    line-height: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 10px;
+}
+
+a {
+    color: white; /* Cor corrigida para branco */
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor */
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.container-quemsomos,
+.container-nossosservicos,
+.container-contato,
+.container-agende {
+    max-width: 800px; /* Ajuste conforme necessário */
+    margin: 0 auto;
+}
+
+/* Restante do seu CSS aqui */
+/* Adicione isso no seu CSS */
+.btn-agende {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-agende:hover {
+    background-color: #2980b9;
+}
+
+/* Adicione estilos para a animação */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Adicione a classe 'animated' quando o botão é clicado */
+.btn-agende.animated {
+    animation: pulse 0.5s ease;
+}

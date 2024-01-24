@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Nossos Serviços</title>
+    <style>
+        body {
+            background-color: #3498db; /* Cor de fundo azul */
+            color: white;
+            font-family: 'Roboto', sans-serif; /* Substitua 'Roboto' pela fonte desejada */
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        /* Estilo para o formulário */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Estilo para os rótulos e campos de entrada */
+        label, input, select {
+            margin: 10px 0;
+        }
+
+        /* Estilo para o botão de envio */
+        button {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #2980b9; /* Cor de fundo azul mais escura */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2574a9; /* Cor de fundo azul mais escura no hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Agendar</h1>
+
+    <!-- Formulário de Agendamento -->
+    <form id="formAgendamento" action="#" method="post">
+        <!-- Campos do formulário -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+
+        <label for="endereco_origem">Endereço de Origem:</label>
+        <input type="text" id="endereco_origem" name="endereco_origem" required>
+
+        <label for="endereco_destino">Endereço de Destino:</label>
+        <input type="text" id="endereco_destino" name="endereco_destino" required>
+
+        <label for="porte_caminhao">Porte do Caminhão:</label>
+        <select id="porte_caminhao" name="porte_caminhao" required>
+            <option value="pequeno">Pequeno</option>
+            <option value="medio">Médio</option>
+            <option value="grande">Grande</option>
+        </select>
+
+        <label for="data_agendamento">Data do Agendamento:</label>
+        <input type="date" id="data_agendamento" name="data_agendamento" required>
+
+        <!-- Botão de envio com evento onclick -->
+        <button type="button" onclick="agendarFrete()">Agendar Frete</button>
+    </form>
+
+    <script>
+        function agendarFrete() {
+            // Verifica se os campos obrigatórios estão preenchidos
+            if (document.getElementById("nome").checkValidity() &&
+                document.getElementById("telefone").checkValidity() &&
+                document.getElementById("endereco_origem").checkValidity() &&
+                document.getElementById("endereco_destino").checkValidity() &&
+                document.getElementById("porte_caminhao").checkValidity() &&
+                document.getElementById("data_agendamento").checkValidity()) {
+
+                // Simula o processamento do agendamento
+                alert("Agendamento Cadastrado, fique no aguardo e retornaremos para você!");
+
+                // Reseta o formulário
+                document.getElementById("formAgendamento").reset();
+            } else {
+                // Exibe uma mensagem de alerta caso algum campo não seja válido
+                alert("Por favor, preencha todos os campos obrigatórios corretamente.");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Empresa de fretes e mudanças">
+    <meta name="author" content="VelociExpress">
+    <title>VelociExpress</title>
+    <link rel="stylesheet" href="./Back.CSS">
+    <link rel="stylesheet" href="./Animation.js">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div id="title">
+            <h1>VelociExpress</h1>
+        </div>
+
+        <!-- Navegação -->
+        <nav>
+            <ul>
+                <li><a href="#quemsomos">Quem Somos</a></li>
+                <li><a href="#nossosservicos">Nossos Serviços</a></li>
+                <li><a href="#contato">Entre em Contato</a></li>
+                <li><a href="#agende">Agende nossos serviços</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main - Conteúdo do site -->
+    <main>
+        <!-- Quem Somos -->
+        <section id="quemsomos" class="quemsomos">
+            <div class="container-quemsomos">
+                <h2>Mas afinal, Quem somos?</h2>
+                <p>Somos a VelociExpress, uma empresa especializada em fretes e mudanças. Nossos serviços incluem transporte rápido e eficiente com caminhões de diferentes portes: pequeno, médio e grande. Ao agendar conosco, garantimos que uma de nossas equipes locais atenderá prontamente às suas necessidades, cumprindo o trajeto com segurança e pontualidade.</p>
+
+                <img src="QuemSomos.jpg" alt="Caminhão da VelociExpress" style="width: 100%; max-width: 800px; margin: 20px auto; display: block;">
+            </div>
+        </section>
+
+        <!-- Nossos serviços -->
+        <section id="nossosservicos" class="nossosservicos">
+            <div class="container-nossosservicos">
+                <h2>Nossos Serviços</h2>
+                <p>Oferecemos serviços de transporte em três portes diferentes: Pequeno, Médio e Grande. Seja qual for o tamanho da sua carga, a VelociExpress está preparada para atender suas necessidades de forma eficiente e confiável.                    
+                </p>
+
+                <img src="NossosService.jpg" alt="Caminhão da VelociExpress" style="width: 100%; max-width: 800px; margin: 20px auto; display: block;">
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato" class="contato">
+            <div class="container-contato">
+                <h2>Entre em contato conosco!</h2>
+                <p>Para dúvidas e informações sobre nossos serviços de frete, entre em contato pelo WhatsApp (48) 01010-0200 ou através do email VelociExpress@gmail.com. Estamos ansiosos para atendê-lo!</p>
+
+                <img src="Contato.jpg" alt="Caminhão da VelociExpress" style="width: 100%; max-width: 800px; margin: 20px auto; display: block;">
+            </div>
+        </section>
+
+        <!-- Agende -->
+        <section id="agende" class="agende">
+            <div class="container-agende">
+                <h2>Agende um dos nossos serviços</h2>
+                <p>Agende um dos nossos serviços pela primeira vez e ganhe um desconto especial de 60% no frete ou mudança, independentemente do porte. Estamos prontos para atender suas necessidades com eficiência e qualidade.</p>
+                
+                <img src="AgendeNosso.jpg" alt="Caminhão da VelociExpress" style="width: 100%; max-width: 800px; margin: 20px auto; display: block;">
+
+                <!-- Botão com ID 'btnAgende' -->
+                <button id="btnAgende" class="btn-agende">Agendar Serviço</button>
+        
+                
+            </div>
+        </section>
+        
+
+        <!-- Imagem -->
+        <section>
+            <img src="caminhaoIMG.avif" alt="Caminhão da VelociExpress" style="width: 100%; max-width: 800px; margin: 20px auto; display: block;">
+        </section>
+    </main>
+
+    <!-- Script da animação -->
+
+    <!-- Adicione isso antes do fechamento da tag </body> -->
+
+    <script>
+        var btnAgende = document.getElementById('btnAgende');
+
+        // Adicione um ouvinte de evento para a animação ao clicar
+        btnAgende.addEventListener('click', function () {
+            // Redirecione para a página de agendamento
+            window.location.href = 'AgendaService.html';
+        });
+    </script>
+
+</body>
+
+</html>
