@@ -54,7 +54,7 @@ a:hover {
 .btn-agende {
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #3498db;
+    background-color: #004776;
     color: white;
     border: none;
     border-radius: 5px;
@@ -63,7 +63,7 @@ a:hover {
 }
 
 .btn-agende:hover {
-    background-color: #2980b9;
+    background-color: #083d5f;
 }
 
 /* Adicione estilos para a animação */
